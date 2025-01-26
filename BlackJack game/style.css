@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+* {
+    font-family: "Varela Round", serif;
+}
+
+body {
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    background-image: url("img.png");
+}
+
+/*p#cards {*/
+/*    text-decoration: underline white;*/
+/*}*/
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #daaa5d;
+}
+
+.outcomes {
+    font-style: italic;
+
+}
+
+.text-area {
+    color: white;
+    text-align: center;
+}
+
+.buttons-area {
+    text-align: center;
+}
+
+button {
+    width: 250px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #daaa5d;
+    color: green;
+    font-size: 0.5em;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.prize-area {
+    text-align: center;
+    color: white;
+
+}
