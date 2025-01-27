@@ -3,11 +3,6 @@ let sum = document.querySelector('#sum');        // This is fine if 'sum' is the
 let outCome = document.querySelector('#outcomes'); // This is fine if 'outcomes' is the ID of an HTML element
 let prize = document.querySelector('#prize');    // This is fine if 'prize' is the ID of an HTML element
 
-// console.log(card1);
-// console.log(card2);
-// console.log(sum);
-// console.log(outCome);
-// console.log(prize);
 
 let hasBlackJack = false;
 
@@ -20,7 +15,10 @@ let isAlive = true;
 
 // The back jack logic
 
-const cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+// the Math.random() generate number from the range of 0.00 -> 0.99
+// the Math.floor(n) rounds the number that has been put inside the parentheses
 let crd1 = cards[Math.floor(Math.random() * cards.length)]
 let crd2 = cards[Math.floor(Math.random() * cards.length)]
 
