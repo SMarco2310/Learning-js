@@ -11,11 +11,11 @@ const message2 = "Do you want to draw another card?";
 const message3 = "You've got Blackjack !";
 
 
-let isAlive = true;
+let isAlive = false;
 
 // The back jack logic
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+const cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
 // the Math.random() generate number from the range of 0.00 -> 0.99
 // the Math.floor(n) rounds the number that has been put inside the parentheses
@@ -28,6 +28,7 @@ let sumValue = crd1 + crd2;
 
 // let gameState = 0;
 function StarGame() {
+    isAlive = true;
     renderGame();
 
 }
@@ -58,10 +59,13 @@ function renderGame() {
 
 function NewCard() {
     // Create a card that holds the values between (2-11)
-    let crd3 = cards[Math.floor(Math.random() * cards.length)]
-    sumValue += crd3;
-    crds.push(crd3)
-    renderGame()
+    if (isAlive && !hasBlackJack) {
+        let crd3 = cards[Math.floor(Math.random() * cards.length)]
+        sumValue += crd3;
+        crds.push(crd3)
+        renderGame()
+    }
+
 }
 
 // function NewGame() {
